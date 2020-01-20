@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="testNG(failed)">
     <classes>
-      <class name="retryLogicTests.MyTests">
+      <class name="AssertionsTestNG.SoftAssertTestCase">
         <methods>
-          <include name="Test1"/>
+          <include name="test2"/>
+          <include name="test1"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- retryLogicTests.MyTests -->
+      </class> <!-- AssertionsTestNG.SoftAssertTestCase -->
     </classes>
   </test> <!-- testNG(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->
