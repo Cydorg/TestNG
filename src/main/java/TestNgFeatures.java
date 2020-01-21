@@ -5,6 +5,8 @@ public class TestNgFeatures
     @Test
     public void loginTest()
     {
+        //throw new SkipException("skipping all tests");
+        //
         System.out.println("login test");
     }
     @Test(dependsOnMethods = "loginTest")
