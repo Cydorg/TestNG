@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--<suite name="TestNG Session Test Automation Suite">-->
+
+<!--    <test name="Different testing Feature Test">-->
+
+<!--        <classes>-->
+<!--            <class name="GoogleTest" />-->
+<!--            <class name="testngBasics" />-->
+<!--            <class name="TestNgFeatures" />-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+
+<suite name="RetryFailedTestSuite" verbose="1">
+
+    <listeners>
+        <listener class-name="retryLogicAnalyzer.RunTimeRetry"/>
+    </listeners>
+
+    <test name="RetryMultipleFailedTestCases">
+        <classes>
+            <class name="retryLogicTests.MyTests1"/>
+        </classes>
+    </test>
+</suite>
